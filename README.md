@@ -1,2 +1,2 @@
-# MyBibliography
-My BibTeX files for papers
+# MyLaTeX
+My LaTeX files and templates for papers
