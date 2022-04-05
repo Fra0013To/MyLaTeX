@@ -1,0 +1,97 @@
+%%% PACCHETTO PER SWITCH CASES IN newcommand %%%
+\usepackage{xstring}
+% Example:
+% \newcommand{\tree}[2]{%
+%     \IfEqCase{#1}{%
+%         {a}{$\sqrt{#2}$}%
+%         {b}{Hi}%
+%         % you can add more cases here as desired
+%     }[\PackageError{tree}{Undefined option to tree: #1}{}]%
+% }%
+
+%%% PACCHETTO PER IF/ELSE CASES IN newcommand
+\usepackage{ifthen}
+% In brief: \ifthenelse{test}{then clause}{else clause}
+
+
+
+%%% FACCIAMO POSTO PER LE SCORCIATOIE SUCCESSIVE %%%
+
+\newcommand{\dOld}{\d}
+%\newcommand{\sOld}{\s}
+\newcommand{\lOld}{\l}
+\newcommand{\rOld}{\r}
+\newcommand{\vOld}{\v}
+\newcommand{\tOld}{\t}
+\newcommand{\bOld}{\b}
+\newcommand{\cOld}{\c}
+\newcommand{\kOld}{\k}
+\newcommand{\COld}{\C}
+
+%%% SEMPLIFICAZIONE DELLA SINTASSI E SCORCIATOIE %%%
+
+\newcommand{\TENS}[1]{\mathop{\mathbf{#1}}\nolimits} % Tensori (lettere maiuscole)
+\newcommand{\Dkl}[2]{D_{\mathrm{KL}}\left({#1}\parallel{#2}\right)}	% Divergenza di Kullback-Liebler
+\newcommand{\Djs}[2]{D_{\mathrm{JS}}\left({#1}, {#2}\right)}	% Divergenza di Jensen-Shannon
+\newcommand{\herm}[1]{{#1}^\dagger}	% Hermitiana di matrice
+\newcommand{\trasp}[1]{{#1}^\top}	% Trasposta di matrice
+\newcommand{\norm}[1]{\parallel{#1}\parallel}	% Norma
+\newcommand{\eps}{\varepsilon}				%   eps: la vecchia varepsilon
+\renewcommand{\d}{\mathrm{d}}					%   d:	differenziale
+\newcommand{\f}{\frac}							%   f:	frazione
+\newcommand{\tf}{\tfrac}						%  tf:	frazione piccola
+\newcommand{\s}{\sqrt}						%   s:	radice
+\newcommand{\pd}[2]{\f{∂{#1}}{∂{#2}}}					%  pd:	derivata parziale
+\newcommand{\pdd}[2]{\f{∂^2{#1}}{∂{#2}^2}}				% pdd:	derivata parziale seconda
+\newcommand{\td}[2]{\f{\d{#1}}{\d{#2}}}					%  td:	derivata totale
+\newcommand{\tdd}[2]{\f{\d^2{#1}}{\d{#2}^2}}				% tdd:	derivata totale seconda
+\newcommand{\fd}[2]{\f{δ{#1}}{δ{#2}}}					%  fd:	derivata funzionale
+\newcommand{\pq}{\overleftrightarrow{∂}}				%  pq:  derivata parziale $bidirezionale$
+\renewcommand{\l}{\left}						%   l:	left
+\renewcommand{\r}{\right}						%   r:	right
+\renewcommand{\v}{\ensuremath{\boldsymbol}}				%   v:	vettore (grassetto) [MEGLIO \boldsymbol O \pmb ?]
+\renewcommand{\t}{\text}						%   t:	text
+\newcommand{\I}{\indices}						%   I:	indici tensoriali (pacchetto tensor)
+\newcommand{\h}{\ensuremath{\hbar}}					%   h:	h tagliato
+\newcommand{\ccall}{\ensuremath{\mathcal}}				%   c:  calligrafico
+\newcommand{\C}{\ensuremath{\mathbb{C}}}				%   C:  insieme dei numeri complessi
+
+\newcommand{\N}{\ensuremath{\mathbb{N}}}				%   N:  insieme dei numeri naturali
+\newcommand{\R}{\ensuremath{\mathbb{R}}}				%   R:  insieme dei numeri Reali
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}				%   Q:  insieme dei numeri Razionali
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}				%   Z:  insieme dei numeri Interi
+\renewcommand{\k}[1]{\ensuremath{\mathinner{|{#1}\rangle}}}		%   k:	|⋅>
+\renewcommand{\b}[1]{\ensuremath{\mathinner{\langle{#1}|}}}		%   b:	<⋅|
+\newcommand{\bk}[1]{\ensuremath{\mathinner{\langle{#1}\rangle}}}	%  bk:  <⋅>
+\newcommand{\bkt}[2]{\mathinner{\langle{#1}|{#2}\rangle}}		% bkt:  <⋅|⋅>
+\newcommand{\B}[1]{\left\langle#1\right|}				%   B:  |⋅>     scaling
+\newcommand{\K}[1]{\left|#1\right\rangle}				%   K:  <⋅|     scaling
+\newcommand{\BK}[1]{\left\langle{#1}\right\rangle}			%  BK:  <⋅>     scaling
+\newcommand{\BKT}[2]{\left\langle{#1}\mid{#2}\right\rangle}		% BKT:  <⋅|⋅>   scaling
+\newcommand{\wt}{\widetilde}						%  td:	widetilde
+\newcommand{\ol}{\overline}
+\newcommand{\bsy}{\boldsymbol}		                % abbreviation for math boldsymbol 
+
+%%% OPERATORI MATEMATICI %%% (aggiungere ad ogni necessità)
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\Corr}{Corr}
+\DeclareMathOperator{\argmin}{arg\,min}
+\DeclareMathOperator{\argmax}{arg\,max}
+\DeclareMathOperator{\E}{\ensuremath{\mathbb{E}}}				%   E:  Valore Atteso
+\DeclareMathOperator{\sigm}{sigm}
+\DeclareMathOperator{\relu}{relu}
+\DeclareMathOperator{\elu}{elu}
+\DeclareMathOperator{\softp}{softp}
+\DeclareMathOperator{\swish}{swish}
+\DeclareMathOperator{\softm}{softmax}
+\DeclareMathOperator{\depth}{depth}
+
+%%%%%%%%%%%%% T O D O %%%%%%%%%%%%%%%
+% includere \bb{} al posto di \mathbb{}. Contestualmente scegliere uno da http://www.latex-community.org/forum/viewtopic.php?f=5&t=2238 (link in fondo). Deve funzionare anche \bb{1}
+
+%%% Se si vuole nabla vettore... %%%
+%\let\nablino\nabla
+%\renewcommand{\nabla}{\boldsymbol{\nablino}}

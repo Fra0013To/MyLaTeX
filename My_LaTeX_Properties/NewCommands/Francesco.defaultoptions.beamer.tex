@@ -1,0 +1,50 @@
+%%% PACCHETTO PER QUOTES (\begin{displayquote})%%%
+\usepackage{csquotes}
+
+\usepackage[english]{babel}
+
+%%% PACCHETTO PER ALCUNI CASI DI MULTICOLONNA %%%
+\usepackage{multicol}
+
+%%% PACCHETTO PER ALCUNI CASI DI MULTIRIGA %%%
+\usepackage{multirow}
+
+%%% PACCHETTO PER DOPPIE LINEE in TABELLE %%%
+\usepackage{hhline}
+
+
+%%% PACCHETTO PER PERSONALIZZAZIONE CAPTION %%%
+\usepackage{caption}
+\usepackage{subcaption} %%% FORSE: only for beamer.
+
+%%% GRAFICHE %%%
+\usepackage{graphicx}
+% TIKZ %
+\usepackage{tikz}
+% PGFPLOTS %
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.6}%{width=10cm, compat=1.9} % retrocompatibilità e proprietà varie plot
+\usepgfplotslibrary{groupplots}
+% VELOCIZZAZIONE/RETROCOMPATIBILITA' PGFPLOTS (CREA PDF CHE POI CARICA) - NON SEMPRE FUNZIONA %
+% \usepgfplotslibrary{external}
+% \tikzexternalize
+% GRAFI CON TIKZ (richiede tikz)%
+\usepackage{pgf}
+\usetikzlibrary{positioning,shapes,arrows,fit,calc,automata,perspective,3d}
+% PACKAGE FOR DRAWING NNs (UP-TO-DATE PACKAGE NOT ON CTAN BUT ON https://github.com/battlesnake/neural) %
+\usepackage{neuralnetwork}
+% PACKAGE FOR NETWORK DRAWINGS (ALSO 3D!!)
+\usepackage{tikz-network}
+
+%%% PACCHETTO PER ANIMAZIONI %%%
+\usepackage{animate}
+
+
+%--------------------------------
+\bibliographystyle{siam}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+%--------------------------------
+
+
+\usepackage[absolute,overlay]{textpos}
+\usepackage{graphicx}

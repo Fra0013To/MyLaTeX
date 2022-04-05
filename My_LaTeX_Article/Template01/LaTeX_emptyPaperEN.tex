@@ -1,0 +1,98 @@
+\documentclass[a4paper,openany,10pt]{article} 
+\usepackage{a4wide} %Remove for 'standard' article format
+
+\input{NewCommands/Francesco.defaultoptions.tex}
+\input{NewCommands/Francesco.symbols.tex}
+\input{NewCommands/Francesco.commands.tex}
+\input{NewCommands/Francesco.newtheorems.tex}
+
+
+%%% BIBLIOGRAPHY FILES %%%
+\bibliography{References/aiPapers,references/myPapers,References/discontinuous} % insert here names of files .bib, e.g.: \bibliography{my_biblio01, Another_biblio}
+
+%%% DOCUMENT PROPERTIES %%%
+\title{This is the Title}
+\author{Tizio \thanks{Dipartimento di Scienze Matematiche, Politecnico di Torino} \footnotemark[2] \footnotemark[3], Caio  \footnotemark[1] \thanks{Member of the INdAM-GNCS group} \thanks{SmartData@PoliTO, Politecnico di Torino}, Sempronio\thanks{Dipartimento di Ingegneria Meccanica e Aerospaziale, Politecnico di Torino} \footnotemark[2], Mario Rossi\thanks{ISI Foundation, Turin, Italy} \,\footnotemark[1] \footnotemark[3]}
+
+\date{THE DATE OF TODAY} %COMMENT THIS FOR USING THE CURREnt-DAY DATE
+
+%%% PROPRIETÀ DEL PDF %%%
+\pdfinfo{%
+	/Title    (TITLE) %%%%%%%%%%%%% <---- SET IT
+	/Author   (AUTHORS) %%%%%%%%%%%%% <---- SET IT
+	/Creator  (AUTHORS) %%%%%%%%%%%%% <---- SET IT
+	/Producer () %%%%%%%%%%%%% <---- SET IT
+	/Subject  (SUBJECTS) %%%%%%%%%%%%% <---- SET IT
+	/Keywords (SUBJECTS) %%%%%%%%%%%%% <---- SET IT
+}
+
+
+%--------------------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+
+%--------------------------------------------------
+%--------------------------------------------------
+
+
+%------------------ABSTRACT------------------------
+\begin{abstract}
+bla bla bla
+\end{abstract}
+%--------------------------------------------------
+
+
+% TABLE OF CONTENTS
+%\tableofcontents
+
+
+%--------------------------------------------------
+%--------------------------------------------------
+%--------------------------------------------------
+
+
+
+%\section{•}
+%\input{•}
+
+fff
+
+
+
+%--------------------------------------------------
+%--------------------------------------------------
+
+%\appendix{
+
+%\section{•}
+%\input{•}
+
+%}
+
+
+%--------------------------------------------------
+%--------------------------------------------------
+%--------------------------------------------------
+
+
+
+
+
+%--------------------------------------------------
+%--------------------------------------------------
+%--------------------------------------------------
+
+\section*{Acknowledgement}
+\input{aknowledgements.tex}
+
+%%%%%%%%%%%% AUTOMATIC REFERENCES %%%%%%%%%%%%
+
+%\printbibliography[heading=bibintoc]
+\printbibliography
+
+
+
+\end{document}
