@@ -1,0 +1,13 @@
+@article{Piazzola2022_SpGridMatlabKit,
+abstract = {The Sparse Grids Matlab kit is a collection of Matlab functions for high-dimensional interpolation and quadrature, based on the combination technique form of sparse grids. It is lightweight, high-level and easy to use, good for quick prototyping and teaching. It is somehow geared towards Uncertainty Quantification (UQ), but it is flexible enough for other purposes. The goal of this paper is to give an overview of the implementation structure of the Sparse Grids Matlab kit and to showcase its potentialities, guided by some illustrative tests and a final comprehensive example on forward and inverse UQ analysis.},
+archivePrefix = {arXiv},
+arxivId = {2203.09314},
+author = {Piazzola, Chiara and Tamellini, Lorenzo},
+eprint = {2203.09314},
+file = {:Users/francescodellasanta/Desktop/SparseGridGINNs/SparseGrids_MATLABkit/The Sparse Grids Matlab kit.pdf:pdf},
+month = {mar},
+pages = {1--37},
+title = {{The Sparse Grids Matlab kit -- a Matlab implementation of sparse grids for high-dimensional function approximation and uncertainty quantification}},
+url = {http://arxiv.org/abs/2203.09314},
+year = {2022}
+}
